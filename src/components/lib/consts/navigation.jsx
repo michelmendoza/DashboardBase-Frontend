@@ -35,9 +35,9 @@ export const DASHBOARD_SIDEBAR_LINKS = [
         icon: <HiOutlineUsers />,
     },
     {
-        key: 'transactions',
-        label: 'Transactions',
-        path: '/transactions',
+        key: 'customersv2',
+        label: 'customersv2',
+        path: '/customersv2',
         icon: <HiOutlineDocumentText />,
     },
     {

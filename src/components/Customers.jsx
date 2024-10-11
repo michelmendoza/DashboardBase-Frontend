@@ -63,7 +63,7 @@ function Customers() {
             <h1 className="text-5xl font-bold text-blue-900 flex justify-self-start px-4">
                 Clientes
             </h1>
-            <main className="my-10 w-full bg-blue-400  md:max-w-2xl">
+            <main className="my-10 w-full bg-white  md:max-w-2xl">
                 <form
                     className="flex flex-col my-6 px-4"
                     onSubmit={handleSubmit}
@@ -120,6 +120,18 @@ function Customers() {
                             <p>
                                 <span>Status:</span>{' '}
                                 {customer.status ? 'ATIVO' : 'INATIVO'}
+                            </p>
+                            <p>
+                                <span>Image:</span>{' '}
+                                {customer.image ? (
+                                    <img
+                                        src={`http://localhost:9001${customer.image}`} // O caminho deve ser correto agora
+                                        alt="Customer"
+                                        className="mt-2 w-32 h-32 object-cover" // Você pode ajustar as classes Tailwind conforme necessário
+                                    />
+                                ) : (
+                                    'Não Cadastrado'
+                                )}{' '}
                             </p>
                             <button
                                 className="bg-red-500 w-7 h-7 flex 
