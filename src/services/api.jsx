@@ -1,6 +1,7 @@
 import axios from 'axios'
 
-const apiUrl = import.meta.env.VITE_API_URL
+const apiUrl = 'https://project-base-backend.vercel.app'
+//const apiUrl = process.env.VITE_API_URL || process.env.REACT_APP_API_URL
 
 console.log('URL da API:', apiUrl)
 const api = axios.create({
